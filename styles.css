@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.button-sign-up {
+    background-color: #6FBF44;
+    border: 1px solid #4CB538;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 124px;
+    height: 45px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Container para conteúdo principal */
+main {
+    display: flex;
+    flex-direction: column-reverse; /* imagem vem depois no mobile */
+    align-items: center;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #161A49;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #4B505A; 
+    margin-bottom: 24px;
+}
+
+.link-learn-more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6FBF44;
+    cursor: pointer; 
+}
+
+/* Esconde o menu no mobile */
+.link-menu {
+    display: none;
+}
+
+/* Telas maiores (tablet/desktop) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 47px;
+        margin-right: 42px;
+    }
+
+    .link-menu {
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 32px;
+        color: #17233D;
+    }
+
+    .button-sign-up {
+        width: 124px;
+        height: 51px;
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: row; /* imagem ao lado do texto em desktop */
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 163px;
+        padding: 0 123px;
+    }
+
+    img {
+        max-width: 500px;
+    }
+
+    .content {
+        width: 493px;
+        margin-left: 85px;
+    }
+
+    h1 {
+        font-size: 62px;
+        line-height: 82px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 33px;
+        margin-bottom: 55px;
+    }
+
+    .link-learn-more {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+
